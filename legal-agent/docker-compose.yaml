@@ -1,0 +1,9 @@
+services:
+  agent:
+    build: .
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    working_dir: /app
+    

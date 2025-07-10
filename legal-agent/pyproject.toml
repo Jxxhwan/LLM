@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "legal-agent"
+version = "0.1.0"
+description = "KMMLU 형법 문제 풀이 AI Agent"
+authors = ["Your Name <your@email.com>"]
+packages = [
+    { include = "agent" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^0.28.1"
+faiss-cpu = "^1.7.4"
+python-docx = "^0.8.11"
+tqdm = "^4.66.1"
+numpy = "^1.24.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
