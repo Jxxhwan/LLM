@@ -54,20 +54,20 @@
 ---
 
 ## 디렉토리 구조
-legal-agent/
-├── agent/                        # 에이전트 핵심 로직 폴더
-│   ├── agent.py                  # 입력을 받아 모델을 호출하고 결과를 생성하는 메인 코드
-│   └── __init__.py               # 파이썬 패키지 인식용 파일
-├── scripts/                      # 실행 및 데이터 처리 스크립트 폴더
-│   ├── run_agent.py              # 입력 파일을 읽고 에이전트를 실행하는 메인 스크립트
-│   └── data_preprocessing.py     # raw data를 임베딩 및 전처리하여 FAISS DB에 저장하는 스크립트 (RAG용)
-├── data/                         # 입력/출력 및 RAG용 데이터 폴더
-│   ├── test.jsonl                # 평가용 입력 데이터 (예: KMMLU test셋)
-│   ├── output.jsonl              # 예측 결과 파일
-│   /raw data ── 형사소송 등4개개.docx # RAG에 사용할 raw data (한국법령정보센터 내 형법/형사소송법 등)
-├── .env                          # 환경변수 파일 (OpenAI API 키 포함)
-├── README.md                     # 프로젝트 설명서
-└── ...                           # 기타 폴더/파일 (content/, pyproject.toml 등)
+legal-agent/  
+├── agent/                        # 에이전트 핵심 로직 폴더  
+│   ├── agent.py                  # 입력을 받아 모델을 호출하고 결과를 생성하는 메인 코드  
+│   └── __init__.py               # 파이썬 패키지 인식용 파일  
+├── scripts/                      # 실행 및 데이터 처리 스크립트 폴더  
+│   ├── run_agent.py              # 입력 파일을 읽고 에이전트를 실행하는 메인 스크립트  
+│   └── data_preprocessing.py     # raw data를 임베딩 및 전처리하여 FAISS DB에 저장하는 스크립트 (RAG용)  
+├── data/                         # 입력/출력 및 RAG용 데이터 폴더  
+│   ├── test.jsonl                # 평가용 입력 데이터 (예: KMMLU test셋)  
+│   ├── output.jsonl              # 예측 결과 파일  
+│   /raw data ── 형사소송 등4개개.docx # RAG에 사용할 raw data (한국법령정보센터 내 형법/형사소송법 등)  
+├── .env                          # 환경변수 파일 (OpenAI API 키 포함)  
+├── README.md                     # 프로젝트 설명서  
+└── ...                           # 기타 폴더/파일 (content/, pyproject.toml 등)  
 - `agent/agent.py`: Agent 핵심 로직
 - `scripts/run_agent.py`: 배치 실행 스크립트
 - `data/`: 입력/출력 데이터
