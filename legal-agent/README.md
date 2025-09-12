@@ -2,7 +2,7 @@
 # 벤치마크 점수 -> 정답률 54%
 
 ## 개요
-- 이 프로젝트는 KMMULU Criminal-Law 카테고리 평가를 위한 Agent System입니다.
+- 이 프로젝트는 KMMULU Criminal-Law 카테고리 평가를 위한 AI 서비스입니다.
 - 모든 코드는 도커 환경에서 실행됩니다.
 
 ## ★★★★★빠른 시작★★★★★
@@ -83,4 +83,5 @@ legal-agent/
 ```bash
 pip install poetry
 poetry install
+
 ```
