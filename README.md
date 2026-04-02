@@ -2,19 +2,17 @@
 - 이 프로젝트는 KMMULU Criminal-Law 카테고리 평가를 위한 AI 입니다.
 - 모든 코드는 도커 환경에서 실행됩니다.
 
-## ★★★★★빠른 시작★★★★★
-1. **.env 파일 확인**
-   - api key가 저장된 .env 파일이 루트 디렉토리에 존재 하는지 확인.
 
-2. **도커 이미지 빌드**
+
+ **도커 이미지 빌드**
    ```sh
    docker build -t legal-agent .
    ```
-3. **★★★컨테이너 통해 바로 실행★★★★**
+ **컨테이너 통해 바로 실행**
    
    **방법 1: Docker Compose (권장)**
    ```sh
-   docker-compose up --build  # 한 줄로 다 끝.
+   docker-compose up --build  
    ```
    
    **방법 2: Docker run**
@@ -22,12 +20,7 @@
    docker run --rm -v ${PWD}/data:/app/data --env-file .env legal-agent
    ```
    
-   **PowerShell의 경우:**
-   ```powershell
-   docker run --rm -v ${PWD}/data:/app/data --env-file .env legal-agent
-   ```
-   결과 창에 성능 확인 가능 및 data/output.jsonl에서 예측/정답 확인 가능
-   ```
+
 ---
 
 ## 입력/출력 파일 안내
